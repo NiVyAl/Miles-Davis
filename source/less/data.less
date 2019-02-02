@@ -1,0 +1,66 @@
+.data {
+  width: 600px;
+  height: 1px;
+  background-color: #8e8e8e;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  position: sticky;
+  top: 60px;
+  line-height: 1px;
+}
+
+.data::before,
+.data::after {
+  display: inline-block;
+  position: relative;
+}
+
+.data::before {
+  content: "1935";
+  left: -40px;
+}
+
+.data::after {
+  content: "2016";
+  float: right;
+  right: -40px;
+}
+
+.data__item {
+  position: absolute;
+  width: 6px;
+  height: 6px; 
+  border-radius: 50%;
+  background-color: #8e8e8e;
+  display: block;
+}
+
+.data__item--1 {
+  bottom: 5px;
+  left: 10px;
+}
+
+.data__item--2 {
+  bottom: 5px;
+  left: 20px;
+}
+
+.data__item--3 {
+  bottom: 15px;
+  left: 20px;
+}
+
+.data__item--4 {
+  bottom: 5px;
+  left: 70px;
+}
+
+.data__item--5 {
+  bottom: 5px;
+  left: 120px;
+}
+
+.data__item--6 {
+  bottom: 5px;
+  left: 130px;
+}
