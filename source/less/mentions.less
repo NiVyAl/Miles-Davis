@@ -30,13 +30,40 @@
   margin: 0 auto;
   margin-bottom: 70px;
   position: sticky;
+  position: -webkit-sticky;
   top: 60px;
 }
 
 .mentions__list--mini .mention__author-avatar  {
-  width: 6px;
-  height: 6px;
-  box-sizing: border-box;
+  //width: 6px;
+  //height: 6px;
+  //box-sizing: border-box;
+  
+  position: relative;
+  //top: 150px;
+  //left: 50%;
+  
+  transform: scale(0.14);
+  background-image: none;
+  background-color: white;
+}
+/*
+.mentions__list--mini .mention__author-avatar::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+} */
+
+.mentions__list--mini .mention {
+  //padding-top: 40px;
 }
 
 .mentions__list--mini .mention__author-name,
